@@ -1,0 +1,15 @@
+
+CREATE TABLE student(
+student_id INT,
+name VARCHAR(20),
+major VARCHAR(20),
+PRIMARY KEY(STUDENT_ID)
+
+);
+SELECT * FROM student;
+
+ALTER TABLE student ADD gpa DECIMAL(3,2);
+INSERT INTO student VALUES(1,'Jack','Biology','6.54');
+INSERT INTO student VALUES(2,'Kate','Sociology','7.54');
+INSERT INTO student(student_id,name) VALUES(3,'Claire')
+INSERT INTO student VALUES(4,'Mike','Physics',8.00);
